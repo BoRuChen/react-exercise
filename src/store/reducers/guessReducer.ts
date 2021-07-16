@@ -10,7 +10,7 @@ interface Action {
 export const guessReducer = (state = initState,action:Action) => {
     switch(action.type){
         case ActionTypes.ADD_NUM:
-            return [...state,action.payload]
+            return [action.payload,...state]
         case ActionTypes.CLEAN_NUM:
             return initState
         default:

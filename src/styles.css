@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply w-20 my-2 rounded-2xl h-8 text-center border-2
+}

@@ -1,4 +1,5 @@
 import { GuessNumber } from "../pages/guessNumber";
+import { Home } from "../pages/home";
 
 export interface IRoute {
     path: string,
@@ -9,6 +10,12 @@ export interface IRoute {
 }
 
 export const routes: IRoute[] = [
+    {
+        path: '/',
+        name : 'Home',
+        component : Home,
+        exact:true
+    },
     {
         path: '/guess',
         name : 'Guess Number',

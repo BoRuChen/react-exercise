@@ -10,17 +10,17 @@ export const App = () => {
     })
     return (
         <div>
-            <Header />
-            <BrowserRouter>
+            <nav>
+                <Header />
+            </nav>
                 <Switch>
                     {routes.map((route)=>{
                         return(
                             <Route key={route.name} path={route.path} exact={route.exact} component={route.component} />
                         )
                     })}
-                    <Redirect to={"/guess"} />
+                    <Redirect to={"/"} />
                 </Switch>
-            </BrowserRouter>
         </div>
     )
 }
